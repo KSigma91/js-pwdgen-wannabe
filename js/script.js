@@ -1,25 +1,13 @@
 // dichiarazione
-let miaStringa;
+const nome = prompt("Qual è il tuo nome?");
+const cognome = prompt("Qual è il tuo cognome?");
+const colore = prompt("Qual è il tuo colore preferito?");
 
 // assegnazione
-miaStringa = "Qual è il tuo nome?";
+document.getElementById("mio_id").innerHTML = `Salve ${nome + cognome + colore}`;
 
-console.log(miaStringa);
-
-
-// dichiarazione
-let miaStringa2;
-
-// assegnazione
-miaStringa2 = "Qual è il tuo cognome?";
-
-console.log(miaStringa2);
-
-
-// dichiarazione
-let miaStringa3;
-
-// assegnazione
-miaStringa3 = "Qual è il tuo colore preferito?";
-
-console.log(miaStringa3);
+console.log(
+    `
+        ${nome} ${cognome}
+    `
+)
